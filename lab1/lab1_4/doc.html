@@ -26,10 +26,9 @@
 		которые отображаются хорошо на устройствах с сильно отличающимися размерами экрана, разрешением, и другими характеристиками)
 		используют атрибуты <code>sizes</code> и <code>srcset</code>.
 		Атрибут <code>sizes</code> задаёт размеры изображения для разных макетов страницы.
-			
 		Атрибут <code>srcset</code> задаёт путь к графическим файлам с учётом размера изображения и устройств.
 		</p>
-		<img srcset = "mushroom_retina.jpg mushroom.jpg mushroom_landscape.jpg mushroom_portrait.jpg" alt = "Гриб" sizes = "600px 500px 400px 300px">
+		<img src = "mushroom_retina.jpg" srcset = "mushroom.jpg, mushroom_landscape.jpg, mushroom_portrait.jpg" alt = "Гриб" sizes = "500px 400px 300px">
 		<h2>Подпись к изображению</h2>
 		<p>Для группирования любых элементов, например, изображений и подписей к ним используется элемент <code>figure</code>.
 		Он не должен быть связан непосредственно с основным содержимым документа и при его перемещении в другое место смысл текста не должен меняться. 
@@ -49,7 +48,7 @@
 		найдено не будет, то будет выбран файл, указанный  атрибутом  <code>src</code> элемента <code>img</code>. 
 		Затем выбранное изображение отображается в пространстве, занятом элементом <code>img</code>.
 		<picture>
-			<source srcset = "mushroom_retina.jpg mushroom.jpg mushroom_landscape.jpg">
+			<source src = "mushroom_retina.jpg" srcset = "mushroom.jpg, mushroom_landscape.jpg">
 			<img src = "mushroom_portrait.jpg">
 		</picture>
 		</p>
