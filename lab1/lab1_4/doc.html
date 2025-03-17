@@ -39,7 +39,7 @@
 		Атрибут <code>srcset</code> задаёт путь к графическим файлам с учётом размера изображения и устройств.
 		</p>
 		<figure>
-		<img src = "mushroom_retina.jpg" srcset = "mushroom_portrait.jpg 300w, mushroom_landscape.jpg 600w, mushroom.jpg 700w" sizes = "(max-width: 600px) 300px, (max-width: 700px) 600px, 700px" alt = "Гриб">
+		<img src = "mushroom_portrait.jpg" srcset = "mushroom_landscape.jpg 600w, mushroom.jpg 700w, mushroom_retina.jpg 1200w" sizes = "(max-width: 700px) 600px, (max-width: 1200px) 700px, 1200px" alt = "Гриб">
 		<figcaption>Гриб</figcaption>
 		</figure>
 		<h2>Подпись к изображению</h2>
@@ -62,9 +62,9 @@
 		Затем выбранное изображение отображается в пространстве, занятом элементом <code>img</code>.</p>
 			<figure>
 		<picture>
+			<source srcset = "mushroom_retina.jpg" media = "(min-width: 1200px)">
 			<source srcset = "mushroom.jpg" media = "(min-width: 700px)">
 			<source srcset = "mushroom_landscape.jpg" media = "(min-width: 600px)">
-			<source srcset = "mushroom_retina.jpg" media = "(min-width: 300px)">
 			<img src = "mushroom_portrait.jpg" alt = "Гриб">
 		</picture>
 			<figcaption>Гриб</figcaption>
