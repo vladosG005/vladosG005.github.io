@@ -62,8 +62,10 @@
 		Затем выбранное изображение отображается в пространстве, занятом элементом <code>img</code>.
 			<figure>
 		<picture>
-			<source src = "mushroom_retina.jpg" srcset = "mushroom.jpg, mushroom_landscape.jpg">
-			<img src = "mushroom_portrait.jpg">
+			<source srcset = "mushroom.jpg" media = "(min-width: 700px)">
+			<source srcset = "mushroom_landscape.jpg" media = "(min-width: 600px)">
+			<source srcset = "mushroom_retina.jpg" media = "(min-width: 300px)">
+			<img src = "mushroom_portrait.jpg" alt = "Гриб">
 		</picture>
 			<figcaption>Гриб</figcaption>
 		</figure>
