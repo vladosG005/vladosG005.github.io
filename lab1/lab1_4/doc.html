@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang = "ru">
+<html lang="ru">
  <head>
-  <meta charset = "UTF-8">
+  <meta charset="UTF-8">
   <title>Изображения</title>
  </head>
  <body>
-  <section class = "center">
+  <section class="center">
 	  
    <h1>Изображения</h1>
 
@@ -14,7 +14,7 @@
    <p>Элемент <code>img</code> внедряет изображение в текущий документ в месте определения элемента. Элемент <code>img</code> не имеет содержимого — он замещается на ходу изображением, указанным в атрибуте <code>src</code>.</p>
    
    <figure>
-    <img src = "globus.gif" alt = "Крутящийся глобус">
+    <img src="globus.gif" alt="Крутящийся глобус">
     <figcaption>Крутящийся глобус</figcaption>
    </figure>
 	  
@@ -23,7 +23,7 @@
    <p>Атрибут <code>alt</code> предоставляет краткое описание изображения. Он содержит альтернативный текст, который отображается, если изображение не может быть выведено. Пользовательские агенты должны отображать альтернативный текст, если они не поддерживают изображения, или сконфигурированы так, чтобы не показывать изображения (отключён показ изображений).</p>
    
    <figure>
-    <img src = "NOTaquaria.jpg" alt = "Альтернативный текст">
+    <img src="NOTaquaria.jpg" alt="Альтернативный текст">
     <figcaption>Черепашка</figcaption>
    </figure>
 	  
@@ -34,10 +34,10 @@
    При указании обоих атрибутов пользовательский агент «впишет» изображение в область с указанными размерами.</p>
 	  
    <figure>
-    <img src = "light.gif" alt = "Свечка">
-    <img src = "slon.png" width = "230" alt = "Слон">
-    <img src = "redcat.jpg" height = "200" alt = "Кот">
-    <img src = "muscle.png" width = "800" height = "200" alt = "Человек">
+    <img src="light.gif" alt="Свечка">
+    <img src="slon.png" width="230" alt="Слон">
+    <img src="redcat.jpg" height="200" alt="Кот">
+    <img src="muscle.png" width="800" height="200" alt="Человек">
     <figcaption>Для первого изображения width и height не заданы<br>
      Для второго изображения задан только width<br>
      Для третьего изображения задан только height<br>
@@ -52,7 +52,7 @@
    Атрибут <code>srcset</code> задаёт путь к графическим файлам с учётом размера изображения и устройств.</p>
 	  
    <figure>
-    <img src = "mushroom_portrait.jpg" srcset = "mushroom_landscape.jpg 600w, mushroom.jpg 700w, mushroom_retina.jpg 1200w" sizes = "(max-width: 700px) 600px, (max-width: 1200px) 700px, 1200px" alt = "Гриб">
+    <img src="mushroom_portrait.jpg" srcset="mushroom_landscape.jpg 600w, mushroom.jpg 700w, mushroom_retina.jpg 1200w" sizes="(max-width: 700px) 600px, (max-width: 1200px) 700px, 1200px" alt="Гриб">
     <figcaption>Гриб</figcaption>
    </figure>
 	  
@@ -64,8 +64,8 @@
    Элемент <code>figcaption</code> содержит описание для элемента <code>figure</code>. Он должен быть первым или последним элементом в группе.</p>
 	  
    <figure>
-    <img src = "html5-logo.png" alt = "Растровый логотип">
-    <img src = "html5-logo.svg" width = "128" height = "128" alt = "Векторный логотип">
+    <img src="html5-logo.png" alt="Растровый логотип">
+    <img src="html5-logo.svg" width="128" height="128" alt="Векторный логотип">
     <figcaption>Логотипы HTML5</figcaption>
    </figure>
 	  
@@ -75,15 +75,15 @@
    <code>source</code> и одного элемента <code>img</code> для обеспечения оптимальной версии изображения 
    для различных размеров экрана. Браузер рассмотрит каждый из дочерних элементов  <code>source</code> 
    и выберет один, соответствующий лучшему совпадению; если совпадений среди элементов <code>source</code> 
-   найдено не будет, то будет выбран файл, указанный  атрибутом  <code>src</code> элемента <code>img</code>. 
+   найдено не будет, то будет выбран файл, указанный  атрибутом <code>src</code> элемента <code>img</code>. 
    Затем выбранное изображение отображается в пространстве, занятом элементом <code>img</code>.</p>
 	  
    <figure>
     <picture>
-     <source srcset = "mushroom_retina.jpg" media = "(min-width: 1200px)">
-     <source srcset = "mushroom.jpg" media = "(min-width: 700px)">
-     <source srcset = "mushroom_landscape.jpg" media = "(min-width: 600px)">
-     <img src = "mushroom_portrait.jpg" alt = "Гриб">
+     <source srcset="mushroom_retina.jpg" media="(min-width: 1200px)">
+     <source srcset="mushroom.jpg" media="(min-width: 700px)">
+     <source srcset="mushroom_landscape.jpg" media="(min-width: 600px)">
+     <img src="mushroom_portrait.jpg" alt="Гриб">
     </picture>
     <figcaption>Гриб</figcaption>
    </figure>
