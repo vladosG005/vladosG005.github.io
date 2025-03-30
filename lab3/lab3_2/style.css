@@ -26,3 +26,9 @@ html {
    strong {
     font-family: Caveat;
    }
+   article{
+   border: 5px solid #000000;
+   border-radius: 6px;
+   margin: 1em;
+   padding: 1em;
+   }
