@@ -3,6 +3,7 @@ html {
     color: #ffffff;
     font-size: 1.5rem;
     line-height: 2rem;
+    background: url(pattern-pentagons-spread.svg);
    }
    p {
     text-align: right;
