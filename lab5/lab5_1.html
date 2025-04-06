@@ -10,12 +10,25 @@
 	padding:10px;
 }
 .menu li{
-	
+	float: left;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .menu li a{
 	display:block;
 	padding:10px;
 	background:#ccf;
+}
+.menu::before, .menu::after {
+  content: "";
+  display: table;
+}
+.menu::after {
+  clear: both;
+}
+.menu {
+  clear: both;
+  zoom: 1;
 }
 </style>
 </head>
